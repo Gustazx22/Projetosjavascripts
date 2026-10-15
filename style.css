@@ -1,0 +1,189 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background: #542b1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0 0 5px;
+}
+
+header p {
+    margin: 0;
+}
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    align-items: start;
+}
+
+section {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    min-width: 0;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #542b1c;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+
+
+
+.produto {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.produto h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.produto p {
+    margin: 8px 0;
+}
+
+
+
+
+.item-carrinho {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+}
+
+.item-carrinho:last-child {
+    border-bottom: none;
+}
+
+.item-carrinho h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.item-carrinho p {
+    margin: 5px 0;
+}
+
+
+
+.cliente-fiado {
+    border: 1px solid #e0d5d0;
+    border-left: 4px solid #8b4513;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+}
+
+.cliente-fiado h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+
+
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #287747;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 3px 3px 3px 0;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1d5c36;
+}
+
+button:focus-visible {
+    outline: 3px solid #d69b56;
+    outline-offset: 2px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#finalizar {
+    background: #542b1c;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#finalizar:hover {
+    background: #713b27;
+}
+
+
+
+
+#total {
+    color: #287747;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 16px 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 14px;
+    }
+
+    section {
+        padding: 14px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
